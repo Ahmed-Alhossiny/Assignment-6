@@ -1,0 +1,500 @@
+/* General Tags Style */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 100px 0 50px 0;
+}
+
+section[id="our-team"] {
+    padding-bottom: 100px;
+}
+
+::selection {
+    color: #0b0e13;
+    background: var(--main-color);
+}
+
+/* General Classes Style */
+
+:root {
+    --main-color: #cbfe1c;
+    --main-bg: #0b0e13;
+}
+
+.main-text-color{
+    color: var(--main-color);
+}
+.main-bg-color{
+    background-color: var(--main-color);
+}
+
+.second-text-color{
+    color: var(--main-bg);
+}
+.second-bg-color{
+    background-color: var(--main-bg);
+}
+
+.third-text-color{
+    color: #d1d5dc;
+}
+.third-bg-color{
+    background-color: #d1d5dc;
+}
+
+.fourth-text-color{
+    color: #99a1af;
+}
+.fourth-bg-color{
+    background-color: #99a1af;
+}
+
+.fifth-text-color{
+    color: #1e2939;
+}
+.fifth-bg-color{
+    background-color: #1e2939;
+}
+
+.white-text-color{
+    color: white;
+}
+
+.main-font{
+    font-family: "Days One", sans-serif;
+}
+
+.secondary-font{
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.fz-12-lh-16 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.fz-14-lh-20 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.fz-16-lh-24 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fz-16-lh-26 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.fz-16-lh-42 {
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.fz-18-lh-28 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.fz-20-lh-28 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.fz-20-lh-30 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fz-24-lh-32 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.fz-48-lh-48 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.fz-60-lh-75 {
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* Sections Style */
+
+/* Navbar Section */
+.navbar {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.517);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d1d5dc;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar-btns i {
+    cursor: pointer;
+}
+
+.navbar-btns i:hover {
+    color: var(--main-color);
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(../imgs/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content p {
+    margin: 20px 0;
+    word-spacing: 3px;
+}
+
+.home-content .start {
+    border: 2px solid var(--main-color);
+}
+
+.home-content .start:hover {
+    background-color: #b0d434;
+    border: 2px solid #b0d434;
+}
+
+.home-content .watch {
+    background-color: inherit;
+    border: 2px solid var(--main-color);
+}
+
+.home-content .watch:hover {
+    background-color: var(--main-color);
+    color: #0b0e13;
+}
+
+.home-img .img-wrapper {
+    background: linear-gradient(200deg, rgba(21, 224, 114, 1) 0%, rgba(87, 199, 133, 1) 30%, rgba(237, 221, 83, 1) 100%);
+}
+
+.home-img .img-wrapper img {
+    width: 100%;
+    height: 375px;
+}
+
+.home-img .active-players {
+    bottom: -20px;
+    left: -20px;
+    border: 1px solid rgba(128, 128, 128, 0.713);
+}
+
+/* Our Games Section */
+.common-header p {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.common-header p::after {
+    content: '';
+    width: 7%;
+    height: 3px;
+    background: linear-gradient(264deg, rgba(11, 14, 19, 1) 0%, rgba(203, 254, 28, 1) 60%);
+    position: absolute;
+    top: 10px;
+    left: 55%;
+}
+
+.common-header p::before {
+    content: '';
+    width: 7%;
+    height: 3px;
+    background: linear-gradient(96deg, rgba(11, 14, 19, 1) 0%, rgba(203, 254, 28, 1) 60%);
+    position: absolute;
+    top: 10px;
+    left: 38%;
+}
+
+.common-header h2 {
+    font-family: "Days One", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.carousel-inner .content-layer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(201, 254, 28, 0.799) 100%);
+    visibility: hidden;
+    z-index: 999;
+}
+
+.carousel-inner .category,
+.carousel-inner .type {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    i {
+        color: var(--main-color);
+    }
+}
+
+.carousel-inner .name {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--main-bg);
+}
+
+.item-content:hover {
+    border: 1px solid var(--main-color);
+    overflow: hidden;
+
+    .content-layer {
+        visibility: visible;
+    }
+
+    img {
+        scale: 1.05;
+    }
+}
+
+.carousel-control-next {
+    top: 90%;
+    right: 53%;
+}
+
+.carousel-control-prev {
+    top: 90%;
+    left: 35%;
+}
+
+.view {
+    top: 90%;
+    left: 49%;
+    background-color: inherit;
+    border: 2px solid var(--main-color);
+}
+
+.view:hover {
+    background-color: var(--main-color);
+    color: #0b0e13;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: fit-content;
+    padding: 30px 20px;
+    border: 2px solid gray;
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    border: 2px solid var(--main-color);
+
+    i {
+        color: var(--main-color);
+    }
+}
+
+
+/* What We Do Section */
+.what-we-do-cards .card {
+    background-color: inherit;
+}
+
+.what-we-do-cards .inner {
+    background-color: #1a1a1a;
+    border: 1px solid gray;
+}
+
+.what-we-do-cards .inner:hover {
+    border: 1px solid var(--main-color);
+
+    .icon {
+        background-color: var(--main-color);
+    }
+
+    i {
+        color: var(--main-bg);
+    }
+}
+
+.what-we-do-cards .inner .icon {
+    background-color: #1e2939;
+}
+
+.what-we-do-cards .card .inner h3 {
+    color: white;
+}
+
+.card .icon i {
+    color: var(--main-color);
+}
+
+.wwd {
+    width: 600px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(11, 14, 19, 1) 0%, rgba(203, 254, 28, 1) 50%, rgba(11, 14, 19, 1) 100%);
+    border: 0;
+}
+
+.what-we-do-slider .to-left-imgs {
+    animation-name: l-slider;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes l-slider {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    25% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.what-we-do-slider .to-right-imgs {
+    animation-name: r-slider;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes r-slider {
+    0% {
+        transform: translateX(25%);
+    }
+
+    25% {
+        transform: translateX(50%);
+    }
+
+    75% {
+        transform: translateX(75%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.what-we-do-slider .slider-bg {
+    background: radial-gradient(circle, rgba(63, 94, 251, 0) 0%, rgba(203, 254, 28, 1) 0%, rgba(252, 70, 107, 0) 100%);
+    border-radius: 50%;
+}
+
+/* Our Team Section */
+#our-team .our-team-cards .card {
+    border: none;
+}
+
+#our-team .our-team-cards .card .card-content {
+    filter: grayscale(100%);
+    transition: all 0.3s linear;
+}
+
+#our-team .our-team-cards .card-content:hover {
+    filter: grayscale(0);
+}
+
+.card-content .r span {
+    writing-mode: vertical-rl;
+}
+
+/* Contact Us Section */
+.contact-us-content .community {
+    background: linear-gradient(90deg, rgba(203, 254, 28, 1) 0%, rgba(15, 224, 115, 1) 100%);
+}
+
+.contact-us-content .community .icons span {
+    cursor: pointer;
+}
+
+.contact-us-content .community .icons span:hover {
+    opacity: 0.5;
+}
+
+.contact-us-content .contact-form {
+    background-color: inherit;
+}
+
+form label {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #d1d5dc;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    background-color: #364153;
+    border: 1px solid rgba(128, 128, 128, 0.52);
+    color: #f1f1f1;
+}
+
+input[id="Message"] {
+    padding: 8px 8px 100px 8px;
+}
+
+form hr {
+    background-color: rgba(128, 128, 128, 0.699);
+    height: 2px;
+    margin: 30px 0;
+}
+
+/* Footer Section */
+.footer-links {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.501);
+}
+
+.footer-links .social i:hover {
+    color: var(--main-color);
+}
+
+.footer-links li a:hover {
+    color: var(--main-color);
+}
+
+.footer-copyright .copy-right-links a:hover {
+    color: var(--main-color);
+}
